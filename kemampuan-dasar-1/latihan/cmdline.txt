@@ -1,0 +1,123 @@
+1. cd <nama directory>: untuk beralih directory
+2. mkdir <nama directory> : untuk membuat directory
+3. dir: melihat isi directory
+4. del <nama file>: untuk menghapus file
+5. ren: untuk mengganti nama file atau folder
+6. ipconfig: menampilkan informasi jaringan
+rochmadqolim@DESKTOP-76O00HU MINGW64 ~/Desktop/projek/kemampuan-dasar/latihan
+$ ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::3f44:cc77:dbfa:f78d%9
+   IPv4 Address. . . . . . . . . . . : 192.168.0.111
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::5708:31e:9789:df0%41
+   IPv4 Address. . . . . . . . . . . : 172.20.0.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
+
+7. ping: menguji konektivitas jaringan
+rochmadqolim@DESKTOP-76O00HU MINGW64 ~/Desktop/projek/kemampuan-dasar/latihan
+$ ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+8. netstat: menampilkan informasi koneksi jaringan dan port yang digunakan
+rochmadqolim@DESKTOP-76O00HU MINGW64 ~/Desktop/projek/kemampuan-dasar/latihan
+$ netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.0.111:53472    whatsapp-chatd-edge-shv-01-iad3:5222  ESTABLISHE
+
+9. tasklist: menampilkan daftar proses yang berjalan
+rochmadqolim@DESKTOP-76O00HU MINGW64 ~/Desktop/projek/kemampuan-dasar/latihan
+$ tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        148 K
+Secure System                   56 Services                   0     22.740 K
+
+10. taskkill: Untuk mengakhiri proses
+11. systeminfo: menampilkan informasi systeminfo
+rochmadqolim@DESKTOP-76O00HU MINGW64 ~/Desktop/projek/kemampuan-dasar/latihan
+$ systeminfo
+
+Host Name:                 DESKTOP-76O00HU
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19045 N/A Build 19045
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Yoga 260
+Registered Organization:
+Product ID:                00330-80000-00000-AA947
+Original Install Date:     16/03/2023, 22:03:08
+
+12. gpupdate: untuk memperbarui kebijakan grup pada domain Windows
+13. regedit: untuk membuka editor registri Windows
+14. shutdown: untuk mematikan atau me-restart komputer
+15. sfc /scannow: untuk memeriksa dan memperbaiki file sistem yang rusak
+16. taskkill: untuk mengakhiri proses
+17. echo: untuk mencetak teks ke layar atau menyimpannya ke dalam file
+18. type: untuk menampilkan isi file teks ke layar
+19. move: untuk memindahkan file atau folder
+20. chkdsk: untuk memeriksa dan memperbaiki kesalahan pada drive
